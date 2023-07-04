@@ -1,0 +1,32 @@
+#offerSection{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    height: 2000px;
+}
+.offer{
+    margin: 100px;
+}
+.offer img {
+    height: 400px;
+    box-shadow: -10px -10px #66fcf1;
+    border: 3px solid #1f2833;
+    border-radius: 40px;
+    margin: 0px 225px;
+}
+.offers-content-link{
+    text-align: center;
+    margin: 45px;
+}
+.offers-content-link a{
+    text-decoration: none;
+    font-size: 30px;
+    padding: 12px 25px;
+    background-color: #1f2833;
+    color: #66fcf1;
+    border-radius: 12px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.offers-content-link a:hover{
+    color: blue;
+}

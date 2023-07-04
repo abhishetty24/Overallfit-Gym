@@ -1,0 +1,16 @@
+extends base.pug 
+
+block style 
+    style 
+         include ../static/css/style.css 
+         include ../static/css/styleOffer.css 
+block content 
+    section#offerSection
+        div.offer
+            img(src="/static/img/offer1.jpg")
+        div.offer
+            img(src="/static/img/offer2.jpg")
+        div.offer
+            img(src="/static/img/offer3.jpg")
+        div.offers-content-link
+            a(href="/membership") Register

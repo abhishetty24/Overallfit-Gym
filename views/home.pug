@@ -1,0 +1,50 @@
+extends base.pug 
+
+block style 
+    style 
+         include ../static/css/style.css 
+block content 
+    section#introSection 
+        div.intro_section_left
+            img(src="/static/img/bg1.jpg", alt="Image not found")
+            p.para1 Stop Thinking 
+            p.para2 Start Doing
+            div.introlink
+                a(href="/membership") Register now
+        div.intro_section_right
+            img(src="/static/img/bg2.jpg", alt="Image not found")
+    hr 
+    section#aboutfitnessSection 
+        p.aboutpara1 Importance of Overall Fitness in life 
+        p.aboutpara2 Fitness does not not only mean Muscles Poping out from Cloth. Its just part of Physical Fitness, But there are other two 
+        p.aboutpara3  types of fitness that is equally important as that of Physical Fitness, They are Spritual Fitness and Mental Fitness. Our Gym package offers all the Three that's why we are Overall Fit Gym .Come join us so that you can also experience this overall Fitness the pack is below
+        p.aboutpara4 1.Spritual Fitness (Reward Classes + Our Gym Music + Our Friendly Staff)
+        p.aboutpara4 2.Physical Fitness (Gym Equipment + Trainers)
+        p.aboutpara4 3.Mental Fitness (Yoga + The Sunday Sermon)
+    hr 
+    section#thanksSection
+        p.paraThanks Reason why we are Best in the Town 
+        div.thanks_card
+            div.thanks_box 
+                div.thanks-img 
+                    img(src="/static/img/best1.jpg")
+                div.thanks-content 
+                    p 11+ Qualified Trainers
+        div.thanks_card
+            div.thanks_box 
+                div.thanks-img 
+                    img(src="/static/img/best2.jpg")
+                div.thanks-content
+                    p Modern Equipments 
+        div.thanks_card
+            div.thanks_box 
+                div.thanks-img  
+                    img(src="/static/img/best3.jpg")
+                div.thanks-content 
+                    p Hygienic and Safe Gym
+        div.thanks_card
+            div.thanks_box 
+                div.thanks-img 
+                    img(src="/static/img/best4.jpg")
+                div.thanks-content
+                    p Open all week round

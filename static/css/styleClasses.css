@@ -1,0 +1,74 @@
+#oursClassesSection{
+    height:4000px;
+}
+#oursClassesSection p.paraOurClasses{
+    text-align: center;
+    padding-top: 23px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 45px;
+    padding: 45px;
+    color:black;
+    text-decoration: underline #66fcf1;
+}
+.classes-content.para{
+    margin: 45px;
+}
+.classes_card{
+    display:flex;
+    justify-content: center;
+    /* margin:37px 21px; */
+    /* height: 230px; */
+}
+.classes-content {
+    text-align: center;
+}
+.classes_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color:black;
+}
+.classes-img {
+    height: 300px;
+    padding:10px 10px;
+    margin: 12px 9px;
+    
+}
+.classes-img  img{
+    /* Image inherits its property from parent using this property u can put image inside the box */
+    height: inherit;
+    border: 3px solid #1f2833;
+    box-shadow: -10px -10px #66fcf1;
+    border-radius: 25px;
+}
+.classes_box  .classes-content p.classes-content.heading{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 35px;
+    margin: 45px;
+}
+.classes_box  .classes-content p.classes-content.para1{
+    text-align: end;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+}
+.classes_box  .classes-content p.classes-content.para2{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    text-align: left;
+}
+.classes-content-link{
+    margin:45px;
+}
+.classes-content-link a{
+    text-decoration: none;
+    font-size: 21px;
+    padding: 12px;
+    background-color: #1f2833;
+    color: #66fcf1;
+    border-radius: 12px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.classes-content-link a:hover{
+    color: blue;
+}

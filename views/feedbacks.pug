@@ -1,0 +1,16 @@
+extends base.pug 
+
+block style 
+    style 
+         include ../static/css/style.css 
+         include ../static/css/styleFeedback.css 
+block content 
+    div.container_feedback
+        p.feedback Feedback Form 
+        form(action="/feedbacks" method="post" class="myfeedbackForm")
+            input(type="text",class="myfeeedbackInput", name="feed_name", placeholder="Name")
+            input(type="number",class="myfeeedbackInput", name="membership_No", placeholder="Membership No")
+            input(type="number",class="myfeeedbackInput",step="any" name="Rating", placeholder="Rating")
+            textarea(name="concern",,class="myfeeedbackInput" cols="30", rows="6", placeholder='Your Feedback')
+            button(class="feedback_btn")
+                |Submit  

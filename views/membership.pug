@@ -1,0 +1,31 @@
+extends base.pug 
+
+block style 
+    style 
+         include ../static/css/style.css 
+         include ../static/css/styleMembership.css 
+block content 
+    div.container
+        p.register Membership Form
+        form(action="/membership" method="post" class="myForm") 
+            input(type="text",class="myInput", name="name1", placeholder="Your Sweet Name")
+            label(for="gender")
+            select.myInput(name="gender") 
+                option(value="female") Female
+                option(value="male") Male
+                option(value="others") Others
+            input(type="number",class="myInput", name="age", placeholder="Your age")
+            input(type="number",class="myInput", name="current_weight",step="any", placeholder="Your Current Weight(In Kgs)")
+            input(type="number",class="myInput", name="desired_weight",step="any", placeholder="Your Desired Weight(In Kgs)")
+            input(type="number",class="myInput", name="height",step="any", placeholder="Your Current Height (In feet)")
+            label(for="membership_period")
+            select.myInput(name="membership_period") 
+                option(value="annually") Annually (1 Year)
+                option(value="semiannually") Semiannually (6 Months)
+                option(value="quarterly") Quarterly (3 Months)
+                option(value="monthly") Monthly (1 Month)
+            input(type="phone",class="myInput", name="phone", placeholder="Your Phone No")
+            input(type="email",class="myInput", name="email", placeholder="Your Email Id")
+            textarea(name="address",,class="myInput" cols="30", rows="6", placeholder='Your Address')
+            button(class="btn")
+                |Register

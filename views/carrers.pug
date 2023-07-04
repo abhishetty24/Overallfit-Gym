@@ -1,0 +1,28 @@
+extends base.pug 
+
+block style 
+    style 
+         include ../static/css/style.css 
+         include ../static/css/styleCarrers.css 
+block content 
+    div.container_carrer
+        p.apply Apply Now 
+        form(action="/carrers" method="post" class="mycarrerForm")
+            input(type="text",class="mycarrerInput", name="carrer_name", placeholder="Name")
+            label(for="gender")
+            select.mycarrerInput(name="carrer_gender") 
+                option(value="female") Female
+                option(value="male") Male
+                option(value="others") Others
+            input(type="number",class="mycarrerInput", name="carrer_age", placeholder="Age")
+            select.mycarrerInput(name="carrer_options") 
+                option(value="Personal_Trainer") Personal Trainer
+                option(value="Floor_Trainer") Floor Trainer
+                option(value="Customer_Care_Executive") Customer Care Executive 
+                option(value="Membership_Sales_Consultant") Membership Sales Consultant 
+                option(value="Group_Exercise_Instructor") Group Exercise Instructor 
+                option(value="Nutritionist") Nutritionist 
+            input(type="phone",class="mycarrerInput", name="carrer_phone", placeholder="Phone No")
+            input(type="email",class="mycarrerInput", name="carrer_email", placeholder="Email Id")
+            button(class="carrer_btn")
+                |Apply 
